@@ -52,8 +52,8 @@ function draw()
   background(0);
 	frameTimer = (frameCount + 100) % 1000;
 
-	// mainDagger.display();
-	// mainPlayer.display();
+	mainDagger.display();
+	mainPlayer.display();
 
 	if (screen == "GameEnd") // End of the game
 	{
@@ -120,7 +120,7 @@ function draw()
 		}
 		for (var i = 0; i < chompeds.length; i ++) // Spawns the Chompeds
 		{
-			// chompeds[i].display();
+			chompeds[i].display();
 			chompeds[i].move(mainPlayer.startPosition, mainPlayer.size);
 			chompeds[i].chompSoundEffect(i);
 
